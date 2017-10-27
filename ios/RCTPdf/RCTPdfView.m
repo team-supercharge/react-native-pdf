@@ -46,13 +46,6 @@
         self.bouncesZoom = NO;
         self.bounces = YES;
         self.delaysContentTouches = NO;
-        
-        // fix statusbar effect when statusbar show/hide
-        if (@available(iOS 11.0, *)) {
-            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        } else {
-            // Fallback on earlier versions
-        }
 
         _needUpdateBounds = NO;
         
